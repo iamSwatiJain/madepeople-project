@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+      <add id="Test_Swati::section" title="Swati" translate="title" module="Test_Swati" parent="Magento_Reports::report" sortOrder="50" dependsOnModule="Test_Swati" resource="Test_Swati::factor"/>
+      <add id="Test_Swati::factor" title="Factor" translate="title" module="Test_Swati" parent="Test_Swati::section" sortOrder="10" dependsOnModule="Test_Swati" action="swati/factor" resource="Test_Swati::factor"/>
+    </menu>
+</config>

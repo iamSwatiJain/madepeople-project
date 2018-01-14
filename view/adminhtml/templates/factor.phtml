@@ -1,0 +1,28 @@
+<table>
+  <tr>
+    <th>Enabled</th>
+    <td><?=$this->getEnabled() ? 'True' : 'False' ?></td>
+  </tr>
+  <tr>
+    <th>Factor</th>
+    <td><?=$this->getFactor() ?></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table class="data-grid" data-role="grid">
+  <tr>
+    <th>Id</th>
+    <th>Order Id</th>
+    <th>Total</th>
+    <th>With Decimal Factor</th>
+  </tr>
+  <?php foreach($this->getItems() as $item): ?>
+  <tr>
+    <td><?=$item->getId()?></td>
+    <td><?=$item->getOrderId()?></td>
+    <td><?=$item->getTotal()?></td>
+    <td><?=$item->getWithDecifactor()?></td>
+  </tr>
+  <?php endforeach; ?>
+</table>
+
